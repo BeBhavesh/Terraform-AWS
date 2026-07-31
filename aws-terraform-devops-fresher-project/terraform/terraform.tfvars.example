@@ -1,0 +1,37 @@
+# =====================================================
+# terraform.tfvars.example
+#
+# HOW TO USE:
+# 1. Copy this file and rename the copy to "terraform.tfvars"
+#      cp terraform.tfvars.example terraform.tfvars
+# 2. Fill in / change the values below for YOUR AWS account
+# 3. Never commit your real terraform.tfvars file (it's already
+#    in .gitignore) since it may contain personal/sensitive values
+# =====================================================
+
+aws_region   = "us-east-1"
+project_name = "devops-fresher-project"
+environment  = "dev"
+
+# Networking
+vpc_cidr             = "10.0.0.0/16"
+public_subnet_cidr   = "10.0.1.0/24"
+private_subnet_cidr  = "10.0.2.0/24"
+availability_zone    = "us-east-1a"
+
+# EC2
+ec2_instance_type = "t2.micro"
+ec2_ami_id         = "ami-0c101f26f147fa7fd" # Verify latest Amazon Linux 2023 AMI for your region
+key_pair_name      = "my-ec2-keypair"        # Must already exist in your AWS account
+my_ip_cidr         = "203.0.113.10/32"       # Replace with YOUR public IP (check https://whatismyip.com)
+
+# S3 (bucket names must be globally unique across ALL AWS accounts)
+s3_bucket_name = "devops-fresher-project-bucket-yourname-2026"
+
+# EKS
+eks_cluster_name        = "devops-fresher-eks-cluster"
+eks_cluster_version     = "1.29"
+eks_node_instance_type  = "t3.medium"
+eks_node_desired_size   = 1
+eks_node_min_size       = 1
+eks_node_max_size       = 2
