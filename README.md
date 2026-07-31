@@ -1,14 +1,9 @@
-# AWS DevOps Fresher Project — Terraform Infrastructure
+# AWS DevOps Project — Terraform Infrastructure
 
 A beginner-friendly, hands-on DevOps portfolio project that provisions a
 small, realistic AWS environment using **Terraform**: a VPC with public
 and private subnets, an EC2 web server, an S3 bucket, and an Amazon EKS
 (Kubernetes) cluster.
-
-> This is a **learning / portfolio project**, built to demonstrate core
-> Terraform and AWS networking concepts clearly — it is **not** a
-> production-grade or enterprise-scale setup. Everything is kept simple
-> and readable on purpose.
 
 ---
 
