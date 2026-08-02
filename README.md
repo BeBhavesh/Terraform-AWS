@@ -9,7 +9,7 @@ and private subnets, an EC2 web server, an S3 bucket, and an Amazon EKS
 
 ## 📌 Project Overview
 
-This project uses Infrastructure as Code (Terraform) to create:
+This Project uses Infrastructure as Code (Terraform) to create:
 
 | # | Resource | Purpose |
 |---|----------|---------|
